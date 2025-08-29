@@ -1,0 +1,23 @@
+{
+  "default_user": "looply_user",
+  "version": "clean_final",
+  "name": "LIA",
+  "intelligence_level": 5,
+  "features": {
+    "learning": true,
+    "memory": true,
+    "chat": true,
+    "jokes": true,
+    "time": true,
+    "intelligence_upgrade": true
+  },
+  "personality": {
+    "friendly": true,
+    "helpful": true,
+    "learning_focused": true
+  },
+  "simple_ui": {
+    "enabled": true,
+    "exit_command": "exit"
+  }
+}

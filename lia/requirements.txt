@@ -1,0 +1,5 @@
+# LIA Clean Final Requirements - Ultra Minimal
+# Core dependencies for clean Looply Intelligent Assistant
+
+# No external dependencies required - uses only Python standard library
+# This clean version is completely self-contained

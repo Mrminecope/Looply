@@ -1,0 +1,182 @@
+{
+  "name": "Looply - Social Media Reimagined",
+  "short_name": "Looply",
+  "description": "A modern, mobile-first social media platform with AI-powered features, LIA assistant, and immersive reels experience",
+  "version": "1.0.0",
+  "theme_color": "#7c3aed",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "start_url": "/",
+  "categories": ["social", "entertainment", "lifestyle", "productivity"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "screenshots": [
+    {
+      "src": "/screenshots/mobile-feed.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Looply Feed - Discover trending content and connect with friends"
+    },
+    {
+      "src": "/screenshots/mobile-reels.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Looply Reels - Immersive short-form video experience"
+    },
+    {
+      "src": "/screenshots/mobile-profile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "User Profile - Showcase your content and connect with community"
+    },
+    {
+      "src": "/screenshots/desktop-dashboard.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Looply Desktop - Full-featured social media experience"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Create Post",
+      "short_name": "Create",
+      "description": "Quickly create a new post with LIA assistance",
+      "url": "/?action=create",
+      "icons": [
+        {
+          "src": "/icons/create-shortcut.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Reels",
+      "short_name": "Reels",
+      "description": "Watch trending reels and short videos",
+      "url": "/?tab=reels",
+      "icons": [
+        {
+          "src": "/icons/reels-shortcut.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Communities",
+      "short_name": "Communities",
+      "description": "Explore and join communities",
+      "url": "/?tab=communities",
+      "icons": [
+        {
+          "src": "/icons/communities-shortcut.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Profile",
+      "short_name": "Profile",
+      "description": "View and edit your profile",
+      "url": "/?tab=profile",
+      "icons": [
+        {
+          "src": "/icons/profile-shortcut.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "files",
+          "accept": ["image/*", "video/*"]
+        }
+      ]
+    }
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+looply",
+      "url": "/handle-protocol?url=%s"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://yourusername.github.io/looply/manifest.json"
+    }
+  ],
+  "prefer_related_applications": false
+}

@@ -1,0 +1,67 @@
+{
+  "name": "looply-social-media-app",
+  "version": "1.0.0",
+  "description": "A modern, mobile-first social media platform with AI-powered features",
+  "homepage": "https://yourusername.github.io/looply",
+  "main": "src/App.tsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "type-check": "tsc --noEmit",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "motion": "^10.16.0",
+    "lucide-react": "^0.263.1",
+    "sonner": "^1.4.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^1.14.0",
+    "recharts": "^2.8.0",
+    "react-hook-form": "^7.45.0",
+    "react-responsive-masonry": "^2.1.7",
+    "react-slick": "^0.29.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.1.0",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^4.0.0-alpha.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-pwa": "^0.16.4",
+    "workbox-window": "^7.0.0"
+  },
+  "keywords": [
+    "social-media",
+    "react",
+    "typescript",
+    "pwa",
+    "mobile-first",
+    "ai-powered",
+    "looply"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/looply.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/looply/issues"
+  }
+}
